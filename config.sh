@@ -2,9 +2,9 @@
 
 # Device
 export FOX_BRANCH="fox_12.1"
-export DT_LINK="https://gitlab.com/faoliveira78/device_oneplus_cheeseburger_dumpling.git -b fox_12.1"
+export DT_LINK="https://github.com/Spector0/Device_Oneplus_Oscar_TWRP -b fox_beta"
 
-export DEVICE="OP5x5T"
+export DEVICE="oscar"
 export OEM="oneplus"
 export DT_PATH="device/$OEM/$DEVICE"
 
@@ -12,7 +12,7 @@ export DT_PATH="device/$OEM/$DEVICE"
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
 ## "bootimage" - for A/B devices without recovery partition (and without vendor boot)
 ## "vendorbootimage" - for devices Using vendor boot for the recovery ramdisk (Usually for devices shipped with Android 12 or higher)
-export TARGET="recoveryimage"
+export TARGET="bootimage"
 
 export OUTPUT="OrangeFox*.zip"
 
@@ -23,7 +23,7 @@ DEPS=(
 )
 
 # Extra Command
-#export EXTRA_CMD="export OF_MAINTAINER=faoliveira78"
+#export EXTRA_CMD="export OF_MAINTAINER="spectør"
 
 # Magisk
 ## Use the Latest Release of Magisk for the OrangeFox addon
